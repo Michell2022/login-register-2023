@@ -1,0 +1,17 @@
+.wrapp-input{
+    position: relative;
+}
+
+.icon-eye{
+    color: rgb(148, 147, 147);
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.3s ease all;
+}
+
+.icon-eye:hover{
+    color: #000;
+}

@@ -1,0 +1,31 @@
+<div class="min-h-screen flex justify-center items-center font-['Poppins']">
+    <div class="border rounded-md py-6 px-8 w-[90%] sm:w-[65%] md:w-[55%] lg:w-[45%] xl:w-[35%]">
+        <form [formGroup]="formLogin">
+            <h2 class="text-center text-[30px]">Iniciar Sesión</h2>
+            <h3 class="text-center mb-6 text-[13.5px]">¿No tienes una cuenta? <a class="text-blue-700 duration-300 hover:text-blue-400" routerLinkActive routerLink="/register">¡Crea tu cuenta aquí!</a></h3>
+            <div>
+                <label for="email">Correo electrónico*</label>
+            </div>
+            <div class="mb-8">
+                <input type="email" name="email" id="email" formControlName="email"
+                class="w-full border rounded-md py-2 px-2">
+            </div>
+            <div>
+                <label for="password">Contraseña</label>
+            </div>
+            
+            
+            <div class="mb-8 wrapp-input">
+                <span class="icon-eye">
+                    <i class="fa-solid fa-eye-slash"></i>
+                </span>
+                <input type="password" name="password" id="password" formControlName="password" class="passInput w-full border rounded-md py-2 pl-2 pr-9">
+            </div>
+
+
+            <div class="pb-3">
+                <button class="bg-blue-500 text-white text-[17px] py-2 w-full rounded-md" [disabled]="formLogin.invalid" (click)="validate()">Ingresar</button>
+            </div>
+        </form>
+    </div>
+</div>
