@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.formulario {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    padding: 30px 40px 30px 40px;
+    width: 90%;
+    max-width: 450px;
+    height: 80%;
+    max-height: 393px;
+}
+
+.titulo{
+    font-size: 28px;
+    text-align: center;
+}
+
+.emailInput,
+.passInput {
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    padding: 10px 10px;
+    width: 100%;
+}
+
+.passInput{
+    padding: 10px 30px 10px 10px;
+}
+
+.formu__mail{
+    margin: 20px auto;
+}
+
+.form__check{
+    margin-top: 10px;
+}
+
+.button__register {
+    margin: 30px 0 15px 0;
+}
+
+.button {
+    background: #1d5eec;
+    color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    transition: 300ms all ease-in-out;
+    width: 100%;
+}
+
+.button:hover {
+    background: #3273ff;
+}
+
+.terminos__condiciones{
+    color: #007bff;
+    transition: 300ms all ease-in-out;
+}
+
+.terminos__condiciones:hover{
+    color: #005bbd;
+    text-decoration: underline;
+}
+
+
+/*****************   CSS PARA OJO *****************/
+.wrapp-input{
+    position: relative;
+}
+
+.icon-eye{
+    color: rgb(148, 147, 147);
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.3s ease all;
+}
+
+.icon-eye:hover{
+    color: #000;
+}
